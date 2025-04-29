@@ -1,41 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fragmentcategory_background">
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
+        <ImageView
+            android:id="@+id/iv3Logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/spendsense"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"/>
+
         <EditText android:id="@+id/etDate"
             android:hint="Date (e.g. 2025-04-22)"
             android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corners"/>
 
         <EditText android:id="@+id/etStartTime"
             android:hint="Start Time"
             android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corners"/>
 
         <EditText android:id="@+id/etEndTime"
             android:hint="End Time"
             android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corners"/>
 
         <EditText android:id="@+id/etDescription"
             android:hint="Description"
             android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corners"/>
 
         <Spinner android:id="@+id/spCategory"
             android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_corners"/>
 
         <Button android:id="@+id/btnAttachPhoto"
             android:text="Attach Photo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:backgroundTint="#003A63"/>
 
         <ImageView android:id="@+id/imgPreview"
             android:layout_width="match_parent"
@@ -49,6 +69,7 @@
             android:text="Save Expense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#003A63"/>
     </LinearLayout>
 </ScrollView>
