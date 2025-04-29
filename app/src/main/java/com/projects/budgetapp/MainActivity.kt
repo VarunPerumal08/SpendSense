@@ -1,38 +1,39 @@
 package com.projects.budgetapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-// Main Activity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainer, CategoryFragment())
-            .commit()
+        val googleSignInButton = findViewById<Button>(R.id.btnGoogleSignIn)
+        val facebookSignInButton = findViewById<Button>(R.id.btnFacebookSignIn)
+        val emailSignInButton = findViewById<Button>(R.id.btnEmailSignIn)
+        val loginButton = findViewById<Button>(R.id.btnLogin)
 
-        findViewById<Button>(R.id.btnCategory).setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainer, CategoryFragment()).commit()
+        // Handle Google Sign In button click
+        googleSignInButton.setOnClickListener {
+            // TODO: Implement Google Sign In
         }
 
-        findViewById<Button>(R.id.btnExpenses).setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainer, ExpenseFragment()).commit()
+        // Handle Facebook Sign In button click
+        facebookSignInButton.setOnClickListener {
+            // TODO: Implement Facebook Sign In
         }
 
-        findViewById<Button>(R.id.btnGoals).setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainer, GoalsFragment()).commit()
+        // Handle Email Sign In button click
+        emailSignInButton.setOnClickListener {
+            // TODO: Navigate to email sign-in screen
+
         }
 
-        findViewById<Button>(R.id.btnSummary).setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainer, SummaryFragment()).commit()
+        // Handle existing user login
+        loginButton.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 }
-

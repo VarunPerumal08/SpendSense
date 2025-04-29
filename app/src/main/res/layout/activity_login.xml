@@ -23,6 +23,13 @@
         android:textColorHint="@color/white"
         android:background="@drawable/rounded_corners"/>
 
+    <EditText android:id="@+id/etEmail"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/rounded_corners"/>
+
     <EditText android:id="@+id/etPassword"
         android:hint="Password"
         android:inputType="textPassword"

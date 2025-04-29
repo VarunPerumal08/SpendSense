@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 class LoginActivity : AppCompatActivity() {
     private lateinit var etUsername: EditText
     private lateinit var etPassword: EditText
+    private lateinit var etEmail: EditText
     private lateinit var btnLogin: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,13 +22,15 @@ class LoginActivity : AppCompatActivity() {
 
         etUsername = findViewById(R.id.etUsername)
         etPassword = findViewById(R.id.etPassword)
+        etEmail = findViewById(R.id.etEmail)
         btnLogin = findViewById(R.id.btnLogin)
 
         btnLogin.setOnClickListener {
             val username = etUsername.text.toString()
             val password = etPassword.text.toString()
+            val email = etEmail.text.toString()
 
-            if (username == "admin" && password == "1234") {
+            if (username == "admin" && email=="user@gmail.com" && password == "1234") {
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             } else {
