@@ -2,17 +2,29 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fragmentcategory_background">
+
+    <ImageView
+        android:id="@+id/iv9Logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/spendsense"
+        android:contentDescription="App Logo"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/btnAddIncome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Income" />
+        android:text="Add Income"
+        android:backgroundTint="#003A63" />
 
     <Button
         android:id="@+id/btnAddExpense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Expense" />
+        android:text="Add Expense"
+        android:backgroundTint="#003A63" />
 </LinearLayout>
