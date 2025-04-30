@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
@@ -14,27 +15,32 @@
         android:layout_marginBottom="16dp"
         android:layout_gravity="center_horizontal"/>
 
+
     <TextView
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluerounded_corners"
+        android:padding="8dp"
+        android:paddingHorizontal="100dp"
         android:text="Bank Account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:background="@drawable/rounded_corners"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textSize="25dp" />
 
     <TextView
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluerounded_corners"
         android:text="Crypto Account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:background="@drawable/rounded_corners"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textSize="25dp" />
 
     <TextView
-        android:text="Electronic Account"
-        android:layout_width="wrap_content"
+        android:layout_width="334dp"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:background="@drawable/rounded_corners"
-        android:textColor="@color/white"/>
+        android:background="@drawable/bluerounded_corners"
+        android:text="Electronic Account"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    />
 </LinearLayout>
