@@ -45,6 +45,21 @@
         android:text="View Summary"
         android:backgroundTint="#003A63" />
 
+    <Button
+        android:id="@+id/btnSpending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spending"
+        android:backgroundTint="#003A63" />
+
+    <Button
+        android:id="@+id/btnAccounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Accounts"
+        android:backgroundTint="#003A63" />
+
+
     <!-- Fragment container -->
     <FrameLayout
         android:id="@+id/fragmentContainer"

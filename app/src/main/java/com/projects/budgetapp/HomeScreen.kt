@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
+
 class HomeScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +33,16 @@ class HomeScreen : AppCompatActivity() {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainer, SummaryFragment()).commit()
         }
+        findViewById<Button>(R.id.btnSpending).setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, SpendingFragment()).commit()
+        }
+
+        findViewById<Button>(R.id.btnAccounts).setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, AccountsFragment()).commit()
+        }
+
     }
 }
 
