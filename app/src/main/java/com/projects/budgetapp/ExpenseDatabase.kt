@@ -35,3 +35,5 @@ abstract class ExpenseDatabase : RoomDatabase() {
         }
     }
 }
+
+// Reference: Android Developers (2023)

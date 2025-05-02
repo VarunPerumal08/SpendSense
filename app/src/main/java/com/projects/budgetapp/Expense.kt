@@ -17,3 +17,4 @@ data class Expense(
     val photoUri: String? = null // Store URI as string
 )
 
+// Implementation based on: Bazarbay (2022)

@@ -9,3 +9,4 @@ data class Goal(
     val minAmount: Double,
     val maxAmount: Double
 )
+// Reference: Android Developers (2023)

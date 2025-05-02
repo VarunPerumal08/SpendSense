@@ -13,3 +13,6 @@ interface GoalDao {
     @Query("SELECT * FROM Goal WHERE month = :month LIMIT 1")
     suspend fun getGoalByMonth(month: String): Goal?
 }
+
+// Android Developers (2023) ViewModel Overview.
+// Available at: https://developer.android.com/topic/libraries/architecture/viewmodel (Accessed: 15 June 2024).

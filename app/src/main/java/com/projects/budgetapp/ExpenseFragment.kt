@@ -155,3 +155,4 @@ class ExpenseFragment : Fragment() {
         photoUri = null
     }
 }
+// Reference: Android Developers (2023)

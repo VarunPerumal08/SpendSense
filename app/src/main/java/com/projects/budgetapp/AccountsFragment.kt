@@ -14,3 +14,4 @@ class AccountsFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_accounts, container, false)
     }
 }
+ // Reference: Android Developers (2023)

@@ -14,3 +14,4 @@ class SpendingFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_spending, container, false)
     }
 }
+// Implementation based on: Bazarbay (2022)
