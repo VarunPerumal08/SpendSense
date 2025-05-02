@@ -30,12 +30,9 @@ class LoginActivity : AppCompatActivity() {
             val password = etPassword.text.toString()
             val email = etEmail.text.toString()
 
-            if (username == "admin" && email=="user@gmail.com" && password == "1234") {
-                startActivity(Intent(this, MainActivity::class.java))
-                finish()
-            } else {
-                Toast.makeText(this, "Invalid credentials", Toast.LENGTH_SHORT).show()
-            }
+            val intent = Intent(this, HomeScreen::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

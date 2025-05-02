@@ -27,4 +27,6 @@ interface ExpenseDao {  // Notice this is an INTERFACE
         val category: String,
         val total: Double
     )
+
+
 }

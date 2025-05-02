@@ -18,6 +18,15 @@
             android:layout_marginBottom="16dp"
             android:layout_gravity="center_horizontal"/>
 
+        <EditText
+            android:id="@+id/etAmount"
+            android:hint="Amount (e.g. 100.00)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rounded_corners" />
+
         <EditText android:id="@+id/etDate"
             android:hint="Date (e.g. 2025-04-22)"
             android:layout_width="match_parent"

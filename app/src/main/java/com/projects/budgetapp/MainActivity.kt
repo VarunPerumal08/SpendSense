@@ -17,23 +17,27 @@ class MainActivity : AppCompatActivity() {
 
         // Handle Google Sign In button click
         googleSignInButton.setOnClickListener {
-            // TODO: Implement Google Sign In
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
         // Handle Facebook Sign In button click
         facebookSignInButton.setOnClickListener {
-            // TODO: Implement Facebook Sign In
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
         // Handle Email Sign In button click
         emailSignInButton.setOnClickListener {
-            // TODO: Navigate to email sign-in screen
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
 
         }
 
         // Handle existing user login
         loginButton.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }

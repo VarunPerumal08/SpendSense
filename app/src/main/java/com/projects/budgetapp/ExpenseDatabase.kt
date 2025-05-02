@@ -6,14 +6,15 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 @Database(
-    entities = [Expense::class],  // Your Expense entity class
+    entities = [Expense::class, Category::class,Goal::class],  // Your Expense entity class
     version = 1,                  // Database version
     exportSchema = false           // Set to true if you want schema exports
 )
 abstract class ExpenseDatabase : RoomDatabase() {
     // Abstract getter for your DAO
     abstract fun expenseDao(): ExpenseDao
-
+    abstract fun categoryDao(): CategoryDao
+    abstract fun goalDao(): GoalDao
     companion object {
         // Singleton prevents multiple instances of database opening
         @Volatile
